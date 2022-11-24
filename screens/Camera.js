@@ -14,7 +14,12 @@ const Cameras = () => {
     return (
       <View style={styles.container}>
         <Text style={{ textAlign: 'center' }}>We need your permission to show the camera</Text>
-        <Button onPress={requestPermission} title="grant permission" />
+ <View style={{display:'flex',justifyContent:"center",alignItems:"center"}}>
+ <TouchableOpacity onPress={requestPermission} style={{backgroundColor:"#389DA0",width:200,padding:10,borderRadius:10,marginTop:10,display:"flex",justifyContent:"center"}}>
+        <View><Text style={{textAlign:"center",fontWeight:'600',color:"white"}}>Grant Permission</Text></View>
+       </TouchableOpacity>
+ </View>
+        {/* <Button onPress={requestPermission} title="grant permission" /> */}
       </View>
     );
   }
@@ -51,6 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignSelf: 'flex-end',
     alignItems: 'center',
+    backgroundColor:"red"
   },
   text: {
     fontSize: 24,

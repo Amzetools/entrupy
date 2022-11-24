@@ -31,7 +31,8 @@ export default function Card() {
               ></View>
                 <View
               style={{backgroundColor:"#686F8D",height:50,width:50,}}
-              ></View>
+              >
+              </View>
               </View>
               <View
                 style={{
@@ -48,7 +49,8 @@ export default function Card() {
               <Text>{packages.PackageName}</Text>
                 <Text>{packages.images}</Text>
               </View>
-              <View><TouchableOpacity
+              <View>
+                <TouchableOpacity
               style={{
                 padding: 10,
                 backgroundColor:"#389DA0",

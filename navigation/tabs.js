@@ -8,6 +8,7 @@ import Search from "../screens/Search";
 import { AntDesign } from "@expo/vector-icons";
 import { Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
@@ -37,7 +38,6 @@ const Tabs = () => {
         name="Membership"
         component={Membership}
         options={{
-          tabBarBadge:"3",
           tabBarIcon: ({ focused }) => (
             <AntDesign
               name="home"
@@ -79,6 +79,39 @@ const Tabs = () => {
               size={30}
               color={focused ? "#fff" : "#666666"}
             />
+          ),
+          headerTitle:"",
+          headerShadowVisible: false,
+          headerLeft: () => (
+            <View
+            style={{
+              marginLeft: 20,
+              backgroundColor:"#FFFFFF",
+              padding:5,
+              borderRadius:50,
+              marginTop:10, 
+            }}
+          >
+            <TouchableOpacity>
+              <AntDesign name="arrowleft" size={28} color="gray" />
+            </TouchableOpacity>
+          </View>
+          ),
+          headerRight: () => (
+            <View
+            style={{
+              // marginLeft: 20,
+              backgroundColor:"#FFFFFF",
+              padding:5,
+              borderRadius:50,
+              marginTop:10,
+              marginRight:20, 
+            }}
+          >
+            <TouchableOpacity>
+            <MaterialCommunityIcons name="message-outline" size={28} color="gray" />
+            </TouchableOpacity>
+          </View>
           ),
         }}
       />
@@ -125,6 +158,14 @@ const Tabs = () => {
               </View>
             </View>
           ),
+          headerTitle: () => (
+            <View>
+             <Text style={{
+               color:"white",
+               fontSize:20,
+             }}>Camera</Text>
+            </View>
+ )
 
         }}
       />
