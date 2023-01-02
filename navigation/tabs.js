@@ -9,10 +9,11 @@ import { AntDesign } from "@expo/vector-icons";
 import { Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import * as Device from 'expo-device';
+import { useState } from "react";
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
-  
   return (
     <Tab.Navigator
       screenOptions={{
@@ -218,7 +219,7 @@ const tabStyles = {
   left: 0,
   right: 0,
   elevation: 0,
-  backgroundColor: "#222222",
-  height: 70,
+  backgroundColor: "#222",
+  height:Device.deviceName === "iPhone" ? 100 : 75,
 };
 export default Tabs;

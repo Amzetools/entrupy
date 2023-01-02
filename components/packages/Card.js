@@ -32,6 +32,7 @@ export default function Card() {
                 <View
               style={{backgroundColor:"#686F8D",height:50,width:50,}}
               >
+                <Text style={{color:"#fff",fontSize:18,textAlign:"center",marginTop:10}}>$25</Text>
               </View>
               </View>
               <View

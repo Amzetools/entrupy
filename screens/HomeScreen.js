@@ -94,7 +94,7 @@ const HomeScreen = () => {
         textTransform:"uppercase",
          color:"#fff",
          letterSpacing:2,
-         marginTop:10,
+         marginTop:90,
       }}>don't have an account ? Sign up</Text>
      </View>
      </View>

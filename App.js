@@ -20,7 +20,9 @@ export default function App() {
     <NavigationContainer>
 
       {/* First Page Navigator */}
-   <Stack.Navigator>
+   <Stack.Navigator
+   
+   >
         
         <Stack.Screen name="Home" component={HomeScreen} options={{
           headerStyle: {
@@ -38,8 +40,7 @@ export default function App() {
         <Stack.Screen name="SignUp" component={SignupScreen}
          options={{
           headerStyle: {
-            backgroundColor:"#387C7D",
-  
+            backgroundColor:"#387C7D",     
           },
           headerTitle:"Login",
           headerTitleStyle: {
@@ -49,7 +50,7 @@ export default function App() {
             <View>
             <TouchableOpacity
             style={{
-              marginTop:10,
+              
               backgroundColor:"#000",
               height:45,
               width:45,
@@ -89,7 +90,6 @@ export default function App() {
             <View>
             <TouchableOpacity
             style={{
-              marginTop:10,
               backgroundColor:"#000",
               height:45,
               width:45,
